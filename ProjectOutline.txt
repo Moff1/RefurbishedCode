@@ -1,0 +1,29 @@
+project-name/
+├── data/
+│   ├── raw/                  # Raw, unprocessed data (often not included in repo due to size)
+│   ├── processed/            # Cleaned and preprocessed data
+│   └── external/             # Data from third-party sources
+├── notebooks/                # Jupyter notebooks for exploration and analysis
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_preprocessing.ipynb
+│   └── 03_model_training.ipynb
+├── src/                     # Source code for data processing, modeling, and evaluation
+│   ├── __init__.py
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   ├── evaluation.py
+│   └── utils.py             # Utility functions (e.g., plotting, data loading)
+├── tests/                   # Unit tests for source code
+│   ├── test_preprocessing.py
+│   └── test_model.py
+├── models/                  # Saved trained models (e.g., .pkl files)
+├── results/                 # Output files like plots, tables, or reports
+│   ├── figures/             # Visualizations (e.g., PNG, PDF)
+│   └── reports/             # Summary reports or presentations
+├── docs/                    # Additional documentation (e.g., methodology, API docs)
+├── requirements.txt         # Python dependencies
+├── environment.yml          # Conda environment file (optional)
+├── README.md               # Project overview and setup instructions
+├── LICENSE                 # License for the project (e.g., MIT, Apache 2.0)
+├── .gitignore              # Files/folders to ignore (e.g., data/, __pycache__/)
+└── setup.py                # (Optional) For packaging the project as a Python module
