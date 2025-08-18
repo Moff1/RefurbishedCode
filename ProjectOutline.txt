@@ -1,24 +1,20 @@
 911Project/
-├── docs/
-│   ├── 
-│   ├── 
-│   └── 
-├── notebooks/                # Jupyter notebooks for exploration and analysis
-│   ├── eda.ipynb
-│   ├── data_preprocessing.ipynb
-│   └── model_training.ipynb
-├── models/                  # Saved trained models (e.g., .pkl files)
-├── docs/                    # Additional documentation (e.g., methodology, API docs)
-|
-├── requirements.txt         # Python dependencies
-├── raw_datasets/         # Conda environment file (optional)
-    |-- 911.csv
-|-- processed_datasets/
-    |--after_eda_dataset.pkl
-    |--x_test.pkl
-    |--x_train.pkl
-    |--y_test.pkl
-    |--y_train.pkl
-├── README.md               # Project overview and setup instructions
-├── LICENSE                 # License for the project (e.g., MIT, Apache 2.0)
-├── .gitignore              # Files/folders to ignore (e.g., data/, __pycache__/)
+├── docs/                    # Documentation (e.g., project details, API references)
+├── notebooks/               # Jupyter notebooks for data exploration and modeling
+│   ├── eda.ipynb           # Exploratory data analysis
+│   ├── data_preprocessing.ipynb  # Data cleaning and preprocessing steps
+│   └── model_training.ipynb     # Model training and evaluation
+├── models/                  # Trained model files (e.g., .pkl, .h5)
+├── data/                    # All datasets (raw and processed)
+│   ├── raw/                # Raw, unprocessed datasets
+│   │   └── 911.csv         # Original dataset
+│   └── processed/          # Processed datasets (post-EDA, ready for modeling)
+│       ├── after_eda_dataset.pkl  # Dataset after exploratory data analysis
+│       ├── x_train.pkl     # Training features
+│       ├── x_test.pkl      # Testing features
+│       ├── y_train.pkl     # Training labels
+│       └── y_test.pkl      # Testing labels
+├── requirements.txt         # Python dependencies for reproducibility
+├── README.md               # Project overview, setup instructions, and usage
+├── LICENSE                 # Project license (e.g., MIT, Apache 2.0)
+├── .gitignore              # Files/folders to ignore (e.g., __pycache__/, *.pkl)
